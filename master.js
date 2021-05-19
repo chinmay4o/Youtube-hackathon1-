@@ -1,4 +1,3 @@
-console.log("chinmay");
 
 const url =
   "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&key=AIzaSyBb5IgKycJCqluDV8sWdXF9arO_KNdZNv4&maxResults=100";
@@ -75,27 +74,24 @@ menu.addEventListener("click", function (e) {
   }
 });
 
-
-//search function for
+//search function for videos
 const search = document.querySelector("input");
-
 search.addEventListener("keyup", function (e) {
   let value1 = search.value.toLowerCase();
-
   searchBar(value1);
 });
 
 function searchBar(value) {
-  fetch(  "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&key=AIzaSyBb5IgKycJCqluDV8sWdXF9arO_KNdZNv4&maxResults=100"
+  fetch(
+    "https://youtube.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&key=AIzaSyBb5IgKycJCqluDV8sWdXF9arO_KNdZNv4&maxResults=100"
   )
     .then((data1) => data1.json())
     .then((x1) => {
-        const parent1 = document.querySelector("#mainbody");
-          let str = " ";
-          parent1.innerHTML = str;
-          
+      const parent1 = document.querySelector("#mainbody");
+      let str = " ";
+      parent1.innerHTML = str;
+
       for (var j in x1.items) {
-          console.log("searched for me ")
         //search conditions
         let name1 = x1.items[j].snippet.title.toLowerCase();
         if (name1.includes(value)) {
@@ -141,7 +137,7 @@ function searchBar(value) {
           channeltitle.innerHTML = x1.items[j].snippet.channelTitle;
           infodiv1.append(channeltitle);
 
-          //appending views for
+          //appending views
           var views = document.createTextNode("1M views . 6 month ago");
           var span = document.createElement("span");
           span.setAttribute("class", "views");
