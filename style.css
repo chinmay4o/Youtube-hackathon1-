@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* navbar */
+#navbar {
+  display: flex;
+  /* position: fixed; */
+  justify-content: space-between;
+  width: 100vw;
+  height: 70px;
+  /* border-bottom: 2px solid #e3e3e3; */
+}
+
+.logo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 20%;
+}
+
+.menu {
+  padding-left: 20px;
+}
+
+.logoh {
+  height: 80px;
+  width: 200px;
+}
+
+/* searchBar */
+.search {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="text"] {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  width: 70%;
+  height: 36px;
+  border: 2px solid #9d9d9d;
+  padding: 10px;
+  box-sizing: border-box;
+
+}
+
+.s1 {
+  margin-left: 5px;
+}
+
+/* icons navbar */
+i{
+    color: grey;
+}
+.icons {
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
+  align-items: center;
+  color: gray;
+}
+
+/* //sidebar */
+
+.side{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    height: 100%;
+    width: 230px;
+    /* overflow-y: scroll; */
+    /* align-items: center; */
+    /* border-right: 1px solid gainsboro; */
+}
+
+.sideContent{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 25px;
+    font-size: 0.9em;
+}
+
+.sideContent:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sideContent span{
+    padding-left: 20px;
+}
+
+.border{
+    border-bottom: 2px solid gainsboro;
+}
+
+
+/* <<<<<<<<<<< Main Body fetch>>>>>>>>>>>> */
+
+#parentView {
+    display: flex;
+    flex-direction: row;
+}
+
+#mainbody{
+    background-color: #f7f7f7;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 10px 20px 35px;
+}
+
+
+/* <<<<<<<<<<<<< child >>>>>>>>>>> */
+
+#child{
+    height: 270px;
+    width: 270px;
+    margin:0 20px 15px 0;
+}
+
+/* thumbnail editing */
+.thumb{
+    height: 150px;
+    width: 270px;
+}
+/* .child{
+    height: 160px;
+    width: 280px;
+    background-color: #a9a9a9;
+} */
+
+
+/* //video title */
+
+.mytitle{
+font-family: 'Montserrat', sans-serif;
+ font-size: 0.8em;
+ font-weight: 500;
+ color: black;
+ text-decoration: none;
+ display: block;
+ margin-top: 6px;
+ margin-bottom: 6px;
+}
+
+.channeltitle{
+font-family: 'Montserrat', sans-serif;
+ font-size: 0.8em;
+ font-weight: 500;
+ color: #5c5c5c;
+ text-decoration: none;
+ display: block;
+ 
+}
+
+/* channel thumbnAIL */
+
+.cthumb{
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    /* float: left; */
+    /* margin-bottom: 20px; */
+    margin-top: 6px;
+    margin-right: 7px;
+}
+
+.infodiv{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+}
+
+.infodiv1{
+    margin-left: 8px;
+}
+
+/* views */
+.views{
+ font-family: 'Montserrat', sans-serif;
+ font-size: 0.8em;
+ font-weight: 500;
+ color: #545454;
+}
+
+/* //media queries */
+
+@media (max-width: 768px) {
+    .search {
+       display: none;
+      }
+
+      .sidebar {
+          display: none;
+      }
+
+      #navbar{
+          justify-content: space-evenly;
+      }
+
+      .logo{
+        justify-content: flex-start;
+        width: 40%;
+      }
+
+      .logoh {
+        height: 60px;
+        width: 180px;
+      }
+
+      .menu {
+        padding-left: 0px;
+      }
+
+      .icons{
+        justify-content: space-evenly;
+        width: 40%;
+      }
+}
+
