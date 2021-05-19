@@ -94,6 +94,7 @@ i{
     align-items: center;
     padding: 12px 25px;
     font-size: 0.9em;
+    font-weigth: 500;
 }
 
 .sideContent:hover{
