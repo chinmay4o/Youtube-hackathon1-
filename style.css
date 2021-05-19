@@ -5,6 +5,9 @@
   padding: 0;
 }
 
+body{
+ font-family: 'Montserrat', sans-serif;
+}
 /* navbar */
 #navbar {
   display: flex;
